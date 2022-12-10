@@ -9,30 +9,14 @@
             {% csrf_token %}
 
             <div>
-                <label>Username</label>
-                <input type="text" name="username" class="w-full mt-2 py-4 px-6 bg-white rounded-xl">
-            </div>
-            
-            <div>
-                <label>First name</label>
-                <input type="text" name="first_name" class="w-full mt-2 py-4 px-6 bg-white rounded-xl">
-            </div>
-
-            <div>
-                <label>Last name</label>
-                <input type="text" name="last_name" class="w-full mt-2 py-4 px-6 bg-white rounded-xl">
-            </div>
-
-            <div>
                 <label>E-mail</label>
-                <input type="email" name="email" class="w-full mt-2 py-4 px-6 bg-white rounded-xl">
+                <input type="text" name="username" class="w-full mt-2 py-4 px-6 bg-white rounded-xl">
             </div>
 
             <div>
                 <label>Password</label>
-                <input type="password" name="password1" class="w-full mt-2 py-4 px-6 bg-white rounded-xl">
+                <input type="password" name="password" class="w-full mt-2 py-4 px-6 bg-white rounded-xl">
             </div>
-
             
             {% if form.errors %}
                 {% for field in form %}
