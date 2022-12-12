@@ -13,10 +13,12 @@ class Category(models.Model):
         verbose_name_plural = 'Categories'
 
         ordering = ('name',)
-
+    
+    #Default String
     def __str__(self):
         return self.name
 
+#Product Model Class
 class Product(models.Model):
     category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
@@ -27,6 +29,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to='uploads/', blank=True, null=True)
     thumbnail = models.ImageField(upload_to='uploads/', blank=True, null=True)
 
+    #Order by descending
     class Meta:
         ordering = ('-created_at',)
     
@@ -71,6 +74,7 @@ class Product(models.Model):
         
         return 0
 
+#Review Model Class - if product is deleted - delete review
 class Review(models.Model):
     product = models.ForeignKey(Product, related_name='reviews', on_delete=models.CASCADE)
     rating = models.IntegerField(default=3)

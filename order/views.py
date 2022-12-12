@@ -8,6 +8,7 @@ from cart.cart import Cart
 
 from .models import Order, OrderItem
 
+#checkout functionality - saves order details, takes to STRIPE payment interface and returns success on completion
 def start_order(request):
     cart = Cart(request)
     data = json.loads(request.body)

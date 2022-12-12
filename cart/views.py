@@ -19,6 +19,7 @@ def cart(request):
 def success(request):
     return render(request, 'cart/success.html')
 
+#update cart product number when clicked on + or -
 def update_cart(request, product_id, action):
     cart = Cart(request)
 
@@ -53,6 +54,7 @@ def update_cart(request, product_id, action):
     return response
 
 
+#to proceed to checkout, user should be logged in
 @login_required
 def checkout(request):
     pub_key = settings.STRIPE_API_KEY_PUBLISHABLE 

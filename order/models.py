@@ -4,6 +4,7 @@ from django.db import models
 
 from product.models import Product
 
+#implemented order class model
 class Order(models.Model):
     ORDERED = 'ordered'
     SHIPPED = 'shipped'
@@ -38,7 +39,7 @@ class Order(models.Model):
         
         return 0
 
-
+#implemented order item - on order or product - delete order item if product is deleted
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, related_name='items', on_delete=models.CASCADE)
     product = models.ForeignKey(Product, related_name='items', on_delete=models.CASCADE)

@@ -31,14 +31,17 @@ LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/login'
 
+#defined session time
 SESSION_COOKIE_AGE = 86400
 CART_SESSION_ID = 'cart'
 
+#for payments functionality, stripe key is added 
 STRIPE_API_KEY_PUBLISHABLE ='pk_test_51MECyWCsywHgIDBm4OcBGokz1gAJVP9rCNPrtG8ej0poLENlHGwmzkQNiFZLz2ItcmmA4ou7Ldz3xyzqrCX6DKU700pIhDtPyX'
 STRIPE_API_KEY_HIDDEN = 'sk_test_51MECyWCsywHgIDBmjnXYiXuDNWulueEpCVKEQiPew8zOC3pvZViBpz7GHLmsznQveG4pCfkzmBj6p9WP3TcsdiHZ00BxIBFL8o'
 
 # Application definition
 
+#added own 4 apps - cart, core, product, order
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

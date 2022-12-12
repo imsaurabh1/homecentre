@@ -8,10 +8,12 @@ from product.models import Product, Category
 
 from .forms import SignUpForm
 
+#displays products in frontpage
 def frontpage(request):
     products = Product.objects.all()[0:8]
     return render(request, 'core/frontpage.html', {'products': products})
 
+#signup functionality - stores user data
 def signup(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -27,10 +29,12 @@ def signup(request):
 
     return render(request, 'core/signup.html', {'form': form})
 
+#to view myaccount, user should be logged in
 @login_required
 def myaccount(request):
     return render(request, 'core/myaccount.html')
 
+#to edit myaccount, user should be logged in
 @login_required
 def edit_myaccount(request):
     if request.method == 'POST':
@@ -43,7 +47,8 @@ def edit_myaccount(request):
 
         return redirect('myaccount')
     return render(request, 'core/edit_myaccount.html')
-    
+
+#search and filter product functionality while shopping   
 def shop(request):
     categories = Category.objects.all()
     products = Product.objects.all()

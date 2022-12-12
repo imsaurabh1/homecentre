@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 
 from .models import Product, Review
 
+
+#adding product reviews - rating from 1 to 6 and comment 
 def product(request, slug):
     product = get_object_or_404(Product, slug=slug)
 

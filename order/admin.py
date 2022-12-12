@@ -2,6 +2,7 @@ from django.contrib import admin
 
 from .models import Order, OrderItem
 
+#adding orders and its details in django admin
 class OrderItemInline(admin.TabularInline):
     model = OrderItem
     raw_id_fields = ['product']

@@ -2,6 +2,7 @@ from django.conf import settings
 
 from product.models import Product
 
+#session is created when cart object is invoked
 class Cart(object):
     def __init__(self, request):
         self.session = request.session
@@ -11,7 +12,8 @@ class Cart(object):
             cart = self.session[settings.CART_SESSION_ID] = {}
         
         self.cart = cart
-
+    
+    #showing product and prices in cart
     def __iter__(self):
         for p in self.cart.keys():
             self.cart[str(p)]['product'] = Product.objects.get(pk=p)
@@ -21,13 +23,16 @@ class Cart(object):
 
             yield item
     
+    #quantity of cart items
     def __len__(self):
         return sum(item['quantity'] for item in self.cart.values())
 
+    #session restarts on save
     def save(self):
         self.session[settings.CART_SESSION_ID] = self.cart
         self.session.modified = True
 
+    #adding product to cart
     def add(self, product_id, quantity=1, update_quantity=False):
         product_id = str(product_id)
 
@@ -42,22 +47,25 @@ class Cart(object):
             
         self.save()
 
+    #removing product from cart
     def remove(self, product_id):
         if product_id in self.cart:
             del self.cart[product_id]
             self.save()
 
+    #cart value is removed when user is logged out
     def clear(self):
         del self.session[settings.CART_SESSION_ID]
         self.session.modified = True
 
-        
+    #displays total cost   
     def get_total_cost(self):
         for p in self.cart.keys():
             self.cart[str(p)]['product'] = Product.objects.get(pk=p)
 
         return int(sum(item['product'].price * item['quantity'] for item in self.cart.values())) / 100
 
+    #items added to cart
     def get_item(self, product_id):
         if str(product_id) in self.cart:
             return self.cart[str(product_id)]
