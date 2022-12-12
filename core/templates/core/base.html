@@ -19,7 +19,7 @@
                         <li><a href="#">About</a></li>
 
                         {% if request.user.is_authenticated %}
-                            <li><a href="{% url 'logout' %}">Log out</a></li>
+                            <li class="text-yellow-500"><a href="{% url 'logout' %}">Log out</a></li>
                         {% endif %}
 
                     </ul>
