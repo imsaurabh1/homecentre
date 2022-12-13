@@ -19,7 +19,8 @@ virtualenv saurabh_env
 5- Activate virtual environment by navigating to .bat file   
 .\saurabh_env\Scripts\activate.bat  
 
-6- Install all libraries using in the project using requirements.txt file   
+6- Install all libraries using in the project using requirements.txt file  
+cd homecentre  
 pip install -r requirements.txt  
 
 7 – Migrate Django project   
