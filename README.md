@@ -46,10 +46,10 @@ Admin is able to manage Categories, Products and Orders
 Add, Delete, Update is possible   
 
 **-Home**   
-Displays Home Page with product images and details  
+Displays Home Page with product images and details, and can add product to cart using cart icon   
 
 **-Product Page**  
-Displays individual product details  
+Displays individual product details and ability to search by product name and filter by categories    
 
 **-Cart Page**  
 Displays products added by the user  
