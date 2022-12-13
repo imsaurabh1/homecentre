@@ -30,58 +30,62 @@ python manage.py migrate
 python manage.py runserver  
 
 
-This project involves following functionalities –   
+## This project involves following functionalities –##   
 
-**-Signup** 
+** 1. Signup** 
 (profile icon on top right)  
 New user can signup using email, password  
 
-**-Login**  
+** 2. Login**  
 (profile icon on top right)   
 Existing user can login with email and password  
 
-**-My Account**  
+** 3. My Account**  
 (profile icon on top right)    
 User can see profile details and my orders  
 User can modify Name, Username and Email  
 
-**-Logout**  
+**4. Logout**  
 (Logout button on top)  
 Logs out already logged in user   
 
-**-Admin Management** 
+**5. Admin Management**  
 (http://127.0.0.1:8000/admin/)  
 Admin is able to manage Categories, Products and Orders   
 Add, Delete, Update functionality for Categories, Products and Orders  
 Filters and Sorting of Orders  
 
-**-Home**  
+**6. Home**  
 Displays Home Page with product images and details  
 Add product to cart using cart icon   
 
-**-Product Page**  
+**7. Product Page**  
 (Shop Button on top left)  
 Displays individual product details  
 Ability to search by product name  
 Filter by categories    
 
-**-Cart Page**  
+**8. Cart Page**  
 (Cart Icon on top right)  
 Displays products added by the user and total cost    
 Ability to increase or decrease product count  
 
-**-Checkout Page**  
+**9. Checkout Page**  
 (Confirm Checkout Button)  
 Asks for shipping information - all fields are mandatory  
 Displays total amount  
 
-**-Payment**  
+**10. Payment**  
 Takes the user to STRIPE payment gateway – accepts card payments  
 
-**-Success** 
+**11. Success** 
 (Pay Button on payment page)  
-Once the payment is complete, it displays thanks for purchasing  
+Once the payment is complete, it displays thanks for purchasing 
 
+**12. Review** 
+(Product page - scroll down)  
+Rating from 1 to 6  
+Review Comment  
 
 ## **Snapshots of the website are added below –** ##  
 
