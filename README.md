@@ -32,15 +32,15 @@ python manage.py runserver
 
 ## This project involves following functionalities –##   
 
-** 1. Signup** 
+**1. Signup** 
 (profile icon on top right)  
 New user can signup using email, password  
 
-** 2. Login**  
+**2. Login**  
 (profile icon on top right)   
 Existing user can login with email and password  
 
-** 3. My Account**  
+**3. My Account**  
 (profile icon on top right)    
 User can see profile details and my orders  
 User can modify Name, Username and Email  
@@ -78,11 +78,11 @@ Displays total amount
 **10. Payment**  
 Takes the user to STRIPE payment gateway – accepts card payments  
 
-**11. Success** 
-(Pay Button on payment page)  
+**11. Success**  
+(Pay Button on payment page)    
 Once the payment is complete, it displays thanks for purchasing 
 
-**12. Review** 
+**12. Review**  
 (Product page - scroll down)  
 Rating from 1 to 6  
 Review Comment  
