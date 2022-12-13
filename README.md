@@ -3,7 +3,7 @@ Django website
 
 Requirements - Python 3   
 
-**Steps to run this project on Windows 11 -**   
+## **Steps to run this project on Windows 11 -** ##   
 
 1 -Create a folder and open Command Prompt Window in that directory   
 
@@ -33,38 +33,52 @@ python manage.py runserver
 This project involves following functionalities –   
 
 **-Signup**   
+(profile icon on top right)  
 New user can signup using email, password  
 
-**-Login**  
+**-Login**
+(profile icon on top right)   
 Existing user can login with email and password  
 
+**-My Account**    
+(profile icon on top right)    
+User can see profile details and my orders  
+User can modify Name, Username and Email  
+
 **-Logout**  
-Logs out already logged in user  
+(Logout button on top)  
+Logs out already logged in user   
 
 **-Admin Management**  
 Admin is able to manage Categories, Products and Orders   
-Add, Delete, Update is possible   
+Add, Delete, Update functionality for Categories, Products and Orders  
+Filters and Sorting of Orders  
 
 **-Home**   
-Displays Home Page with product images and details, and can add product to cart using cart icon   
+Displays Home Page with product images and details  
+Add product to cart using cart icon   
 
 **-Product Page**  
-Displays individual product details and ability to search by product name and filter by categories    
+Displays individual product details  
+Ability to search by product name  
+Filter by categories    
 
 **-Cart Page**  
-Displays products added by the user  
+Displays products added by the user and total cost    
+Ability to increase or decrease product count  
 
 **-Checkout Page**  
-Asks for user info – address and phone for shipping and shows total price   
+Asks for shipping information - all fields are mandatory  
+Displays total amount  
 
 **-Payment**  
-Takes the user to STRIPE payment gateway – it accepts card payments  
+Takes the user to STRIPE payment gateway – accepts card payments  
 
 **-Success**  
 Once the payment is complete, it displays thanks for purchasing  
 
 
-**Snapshots of the website are added below –**   
+## **Snapshots of the website are added below –** ##  
 
 
 **HOME**
