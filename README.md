@@ -1,68 +1,71 @@
 # homecentre
-Django website
+Django website  
 
-Requirements - Python 3 
+Requirements - Python 3   
 
-**Steps to run this project on Windows 11 -** 
+**Steps to run this project on Windows 11 -**   
 
-1 -Create a folder and open Command Prompt Window in that directory 
+1 -Create a folder and open Command Prompt Window in that directory   
 
-2- Clone the code from GitHub - HomeCentre 
-git clone https://github.com/imsaurabh1/homecentre.git
+2- Clone the code from GitHub - HomeCentre  
+git clone https://github.com/imsaurabh1/homecentre.git  
 
-3- Install Virtual Environment – if not installed already  
-pip install virtualenv
+3- Install Virtual Environment – if not installed already    
+pip install virtualenv  
 
-4 – Create a virtual environment with a name – for example ‘saurabh_env’ 
-virtualenv saurabh_env
+4 – Create a virtual environment with a name – for example ‘saurabh_env’   
+virtualenv saurabh_env  
 
-5- Activate virtual environment by navigating to .bat file 
-.\saurabh_env\Scripts\activate.bat
+5- Activate virtual environment by navigating to .bat file   
+.\saurabh_env\Scripts\activate.bat  
 
-6- Install all libraries using in the project using requirements.txt file 
-pip install -r requirements.txt
+6- Install all libraries using in the project using requirements.txt file   
+pip install -r requirements.txt  
 
-7 – Migrate Django project 
-python manage.py migrate
+7 – Migrate Django project   
+python manage.py migrate  
 
 8 – Run the application  
-python manage.py runserver
+python manage.py runserver  
 
 
-This project involves following functionalities – 
-**-Signup** 
-New user can signup using email, password
+This project involves following functionalities –   
 
-**-Login**
-Existing user can login with email and password
+**-Signup**   
+New user can signup using email, password  
 
-**-Logout**
-Logs out already logged in user
+**-Login**  
+Existing user can login with email and password  
 
-**-Admin Management**
-Admin is able to manage Categories, Products and Orders 
-Add, Delete, Update is possible 
+**-Logout**  
+Logs out already logged in user  
 
-**-Home** 
-Displays Home Page with product images and details
+**-Admin Management**  
+Admin is able to manage Categories, Products and Orders   
+Add, Delete, Update is possible   
 
-**-Product Page**
-Displays individual product details
+**-Home**   
+Displays Home Page with product images and details  
 
-**-Cart Page**
-Displays products added by the user
+**-Product Page**  
+Displays individual product details  
 
-**-Checkout Page**
-Asks for user info – address and phone for shipping and shows total price 
+**-Cart Page**  
+Displays products added by the user  
 
-**-Payment**
-Takes the user to STRIPE payment gateway – it accepts card payments
+**-Checkout Page**  
+Asks for user info – address and phone for shipping and shows total price   
 
-**-Success**
-Once the payment is complete, it displays thanks for purchasing
+**-Payment**  
+Takes the user to STRIPE payment gateway – it accepts card payments  
+
+**-Success**  
+Once the payment is complete, it displays thanks for purchasing  
 
 
-Snapshots of the website are added below – 
+**Snapshots of the website are added below –**   
+
+
 **HOME**
 ![HOME](/media/snaps/home.jpg)
 
