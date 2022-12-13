@@ -32,15 +32,15 @@ python manage.py runserver
 
 This project involves following functionalities –   
 
-**-Signup**   
+**-Signup** 
 (profile icon on top right)  
 New user can signup using email, password  
 
-**-Login**
+**-Login**  
 (profile icon on top right)   
 Existing user can login with email and password  
 
-**-My Account**    
+**-My Account**  
 (profile icon on top right)    
 User can see profile details and my orders  
 User can modify Name, Username and Email  
@@ -49,32 +49,37 @@ User can modify Name, Username and Email
 (Logout button on top)  
 Logs out already logged in user   
 
-**-Admin Management**  
+**-Admin Management** 
+(http://127.0.0.1:8000/admin/)  
 Admin is able to manage Categories, Products and Orders   
 Add, Delete, Update functionality for Categories, Products and Orders  
 Filters and Sorting of Orders  
 
-**-Home**   
+**-Home**  
 Displays Home Page with product images and details  
 Add product to cart using cart icon   
 
 **-Product Page**  
+(Shop Button on top left)  
 Displays individual product details  
 Ability to search by product name  
 Filter by categories    
 
 **-Cart Page**  
+(Cart Icon on top right)  
 Displays products added by the user and total cost    
 Ability to increase or decrease product count  
 
 **-Checkout Page**  
+(Confirm Checkout Button)  
 Asks for shipping information - all fields are mandatory  
 Displays total amount  
 
 **-Payment**  
 Takes the user to STRIPE payment gateway – accepts card payments  
 
-**-Success**  
+**-Success** 
+(Pay Button on payment page)  
 Once the payment is complete, it displays thanks for purchasing  
 
 
